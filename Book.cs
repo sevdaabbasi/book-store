@@ -11,4 +11,10 @@ public class Book
   public int GenreId { get; set; }
   public int PageCount { get; set; }
   public DateTime PublishDate { get; set; }
+  
+  // Foreign key for Author
+  public int AuthorId { get; set; }
+  
+  // Navigation properties
+  public Author Author { get; set; }
 }
